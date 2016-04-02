@@ -1,0 +1,22 @@
+{
+  "name": "twitchbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmayer515/TwitchBot.git"
+  },
+  "author": "Andrew Mayer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewmayer515/TwitchBot/issues"
+  },
+  "homepage": "https://github.com/andrewmayer515/TwitchBot#readme",
+  "dependencies": {
+    "tmi.js": "0.0.29"
+  }
+}
