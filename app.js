@@ -2,7 +2,7 @@ var irc = require("tmi.js");
 
 var options = {
 	options: {
-		debug: true
+		debug: false
 	},
 	connection: {
         cluster: "aws",
@@ -22,6 +22,6 @@ client.connect();
 
 client.on("chat", function (channel, user, message, self) {
 	if (message === "hi") {
-		client.action(channelName, "hello");
+		client.action(channelName, "Hello " + user.username);
 	}
 });
