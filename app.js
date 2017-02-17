@@ -1,4 +1,5 @@
 var irc = require("tmi.js");
+var auth = require("./authentication.json")
 
 var options = {
 	options: {
@@ -9,8 +10,8 @@ var options = {
         reconnect: true
     },
     identity: {
-        username: "AndrewMBot",
-        password: "oauth:633lyv2a8j79evpir6cire777csw2i"
+        username: auth.username,
+        password: auth.password
     },
     channels: ["#andrewmayer515"]
 }
