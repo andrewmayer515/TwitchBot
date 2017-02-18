@@ -4,12 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andrewmayer515/TwitchBot.git"
-  },
+  "repository": "git+https://github.com/andrewmayer515/TwitchBot.git",
   "author": "Andrew Mayer",
   "license": "ISC",
   "bugs": {
@@ -17,6 +14,7 @@
   },
   "homepage": "https://github.com/andrewmayer515/TwitchBot#readme",
   "dependencies": {
+    "moment": "^2.17.1",
     "tmi.js": "0.0.29"
   }
 }

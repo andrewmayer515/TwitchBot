@@ -1,6 +1,11 @@
 var irc = require("tmi.js");
 var auth = require("./authentication.json")
+var moment = require("moment");
 
+//Get the time that the node service starts
+var startTime = moment();
+
+//Set configs for Twitch API
 var options = {
 	options: {
 		debug: false
@@ -22,7 +27,17 @@ var channelName = "andrewmayer515";
 client.connect();
 
 client.on("chat", function (channel, user, message, self) {
-	if (message === "hi") {
-		client.action(channelName, "Hello " + user.username);
+	switch (message) {
+		case "hi":
+			client.action(channelName, "Hello " + user.username);
+			break;
+		case "*time":
+			client.action(channelName, "Andrew has been online for x minutes");
+			break;
+		default:
+			break;
 	}
+	/**if (message === "hi") {
+		client.action(channelName, "Hello " + user.username);
+	}**/
 });
